@@ -10,13 +10,13 @@ from src.evaluate import evaluate_model
 def main():
 
     # 1. Load data
-    df = load_data("data/raw/mushroom_cleaned.csv")
+    df = pd.read_csv("dataset/mushroom_cleaned.csv")
     df = move_class_column(df)
     df = remove_duplicates(df)
 
     # 2. Outlier removal
-    outlier_features = ["cap-diameter", "stem-height", "cap-shape",
-                        "gill-attachment", "gill-color", "stem-color"]
+    outlier_features = ["cap-diameter", "stem-height", "stem-width"]
+
     df = remove_outliers(df, outlier_features)
 
     # 3. Transform
