@@ -16,40 +16,9 @@ The final model is built using **XGBoost** and achieves high classification perf
 
 ---
 
-## Project Structure
-
-```
-dataset/
-│─ mushroom_cleaned.csv
-│─ mushroom_cleaned.xls
-
-src/
-│─ data.py          # Data loading & preprocessing
-│─ eda.py           # Visualization (EDA)
-│─ evaluate.py      # Evaluation metrics
-│─ features.py      # Feature selection (SFS, correlation)
-│─ model.py         # Model training & tuning
-│─ transform.py     # Feature transformations
-
-
-main.py              # Main pipeline
-xls_to_csv.py        # Converts .xls → .csv
-pyproject.toml       # Dependencies (Poetry)
-README.md
-```
-
----
-
-##  Installation
-
-This project uses **Poetry** for dependency management.
-
-
----
-
 ## Pipeline Steps
 
-The pipeline in `main.py` performs:
+The pipeline in **main.py** performs:
 
 1. **Load Data**
 2. **Exploratory Data Analysis (EDA)**
