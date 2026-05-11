@@ -27,8 +27,8 @@ The workflow consists of:
 
 The final model achieved strong performance on the test set:
 
-* **Accuracy:** 97.08%
-* **Precision / Recall / F1-score:** ~0.97
+* Accuracy: 97.08%
+* Precision / Recall / F1-score: ~0.97
 
 The model performs consistently across both classes, indicating balanced predictions.
 
@@ -45,10 +45,10 @@ Only a small number of misclassifications are observed relative to the dataset s
 
 ## Key Techniques
 
-* **Model:** XGBoost Classifier
-* **Feature Selection:** Sequential Floating Forward Selection (SFS)
-* **Hyperparameter Tuning:** GridSearchCV
-* **Data Processing:** Outlier removal + feature transformations
+* Model: XGBoost Classifier
+* Feature Selection: Sequential Floating Forward Selection (SFS)
+* Hyperparameter Tuning: GridSearchCV
+* Data Processing: Outlier removal + feature transformations
 
 ---
 
