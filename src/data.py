@@ -4,8 +4,8 @@ from scipy.stats import zscore
 
 def load_data(path: str) -> pd.DataFrame:
     """
-    Load the mushroom dataset from CSV or Excel.
-    Handles mislabeled .xls files that are actually CSV.
+    Load the mushroom dataset.
+    Handles mislabeled files 
     """
     try:
         return pd.read_csv(path)
@@ -32,7 +32,7 @@ def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
 def remove_outliers(df: pd.DataFrame, features: list, threshold: float = 2.5) -> pd.DataFrame:
     """
     Remove rows where any selected feature has a z-score above the threshold.
-    Only applies to continuous features.
+    For continuous features.
     """
     df = df.copy()
     z = df[features].apply(zscore)

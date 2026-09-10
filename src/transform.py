@@ -5,7 +5,7 @@ from scipy.stats import boxcox
 def transform_features(df):
     """
     Apply Box-Cox and cube-root transformations.
-    Assumes positive values for Box-Cox.
+    
     """
     df = df.copy()
 
